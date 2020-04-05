@@ -1,6 +1,6 @@
 {
 	"name": "@h-toolkit/events-logger",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "An extension for Events Emitter to log every event get fired while debugging",
 	"main": "dist/main.js",
 	"type": "dist/main.d.ts",

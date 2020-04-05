@@ -1,5 +1,6 @@
 import * as chalk from 'chalk';
-let start: any = null;
+
+let start: number = Date.now();
 
 export default (objToLog: any, _loggerName?: string) => {
 	const emit = objToLog && objToLog.emit;
@@ -13,8 +14,8 @@ export default (objToLog: any, _loggerName?: string) => {
 		console.error(
 			chalk.yellow((_loggerName || objToLog.constructor.name) + ':'),
 			chalk.white(event),
-			args.length > 50 ? chalk.gray('(' + args.join(', ') + ')') : '',
-			chalk.red('+' + diff + 'ms')
+			args && args.join().length < 300 ? chalk.gray('(' + args.join(', ') + ')') : '',
+			chalk.red('interval: +' + diff + 'ms')
 		);
 
 		return emit.apply(this, arguments);
