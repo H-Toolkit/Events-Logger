@@ -1,0 +1,40 @@
+{
+	"name": "@h-toolkit/events-logger",
+	"version": "1.0.0",
+	"description": "An extension for Events Emitter to log every event get fired while debugging",
+	"main": "dist/main.js",
+	"type": "dist/main.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"prepublish": "tsc",
+		"start:dev": "nodemon"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/h-toolkit/events-logger.git"
+	},
+	"keywords": [
+		"node",
+		"events-emitter",
+		"event-logger",
+		"logger",
+		"typescript",
+		"javascript"
+	],
+	"author": "Hisham Taha Kamal-Al-Din",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/h-toolkit/events-logger/issues"
+	},
+	"homepage": "https://github.com/h-toolkit/events-logger#readme",
+	"devDependencies": {
+		"@types/chalk": "^2.2.0",
+		"@types/node": "^13.11.0",
+		"nodemon": "^2.0.2",
+		"ts-node": "^8.8.1",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"chalk": "^4.0.0"
+	}
+}
